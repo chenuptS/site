@@ -1,35 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
+<html class="uk-notouch" lang="en-GB">
 <head>
-  <meta charset="UTF-8">
-  <title>Custom Node.js cartridge for OpenShift</title>
-  <meta name="description" content="Custom cartridge for OpenShift providing the lastest version of Node.js.">
-  <meta name="keywords" content="Node.js, JavaScript, ES6, OpenShift, es6, paas">
-  <meta name="author" content="Ionut-Cristian Florescu">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link href='https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono' rel='stylesheet' type='text/css'>
-  <link href="main.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Pagekit">
+  <link rel="canonical" href="http://pagekit.com/demo/theme-one/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="og:site_name" content="Pagekit">
+  <meta property="og:title" content="Home">
+  <meta property="og:url" content="http://pagekit.com/demo/theme-one/">
+  <link href="/demo/theme-one/app/system/modules/theme/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/demo/theme-one/app/system/modules/theme/apple_touch_icon.png" rel="apple-touch-icon-precomposed">
+  <title>Pagekit | Home</title>
+  <link href="/css/theme.css" rel="stylesheet">
+  <script>var $pagekit = {"url": "\/demo\/theme-one", "csrf": "e54983658acfbd5c8a87fe5513181ea8ce3df790"};</script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/uikit.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/components/sticky.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/components/lightbox.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/components/grid-parallax.min.js"></script>
+  <script src="/js/theme.js"></script>
+  <style>
+    .cm-text-uppercase {
+      text-transform: uppercase;
+    }
+  </style>
+  <style type="text/css"></style>
 </head>
 <body>
-  <header>
-    <a href="https://github.com/icflorescu/openshift-cartridge-nodejs"><img class="fork" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-    <p>This is a</p>
-    <img class="logo" title="Node.js" src="nodejs-logo.svg">
-    <p>application running in a <a href="https://github.com/icflorescu/openshift-cartridge-nodejs" target="_blank">custom cartridge</a> on</p>
-    <img class="logo" title="OpenShift Online Logo" src="openshift-online-logo.svg">
-  </header>
-  <main>
-    <info type="gen"></info>
-    <info type="poll"></info>
-  </main>
-  <footer>
-    <p>Developed by <a href="https://github.com/icflorescu" target="_blank">Ionut-Cristian Florescu</a> and released under the <a href="https://github.com/icflorescu/openshift-cartridge-nodejs/blob/master/LICENSE">ISC License</a>.</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/riot/2.4.1/riot+compiler.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/superagent/0.18.0/superagent.min.js"></script>
-  <script type="riot/tag" src="info.tag"></script>
-  <script>
-    riot.mount('*')
-  </script>
+<div class="uk-sticky-placeholder" style="margin: 0px;">
+  <div class="tm-navbar tm-navbar-overlay tm-navbar-transparent tm-navbar-contrast"
+       data-uk-sticky="{&quot;media&quot;:767,&quot;showup&quot;:true,&quot;animation&quot;:&quot;uk-animation-slide-top&quot;,&quot;top&quot;:&quot;.uk-sticky-placeholder + *&quot;,&quot;clsinactive&quot;:&quot;tm-navbar-transparent tm-navbar-contrast&quot;}"
+       style="margin: 0px;">
+    <div class="uk-container uk-container-center">
+      <nav class="uk-navbar">
+        <a class="uk-navbar-brand" href="/demo/theme-one/">
+          <img class="tm-logo uk-responsive-height" src="/image/pagekit-logo.svg" alt="">
+          <img class="tm-logo-contrast uk-responsive-height"
+               src="/image/pagekit-logo-contrast.svg" alt="">
+        </a>
+        <div class="uk-navbar-flip uk-hidden-small">
+          <ul class="uk-navbar-nav">
+            <li class=" uk-active">
+              <a href="/demo/theme-one/">Home</a>
+            </li>
+            <li class="">
+              <a href="/demo/theme-one/about">About</a>
+            </li>
+            <li class="">
+              <a href="/demo/theme-one/blog">Blog</a>
+            </li>
+            <li class="">
+              <a href="/demo/theme-one/positions">Positions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="uk-navbar-flip uk-visible-small">
+          <a href="#offcanvas" class="uk-navbar-toggle" data-uk-offcanvas=""></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<div id="tm-hero"
+     class="tm-hero uk-block uk-block-large uk-cover-background uk-flex uk-flex-middle uk-height-viewport uk-contrast"
+     style="background-image: url('/image/home-hero.jpg');">
+  <div class="uk-container uk-container-center">
+    <section class="uk-grid uk-grid-match" data-uk-grid-margin="">
+      <div class="uk-width-medium-1-1 uk-row-first">
+        <div class="uk-panel  uk-text-center ">
+          <h1 class="uk-heading-large uk-margin-large-bottom">Hello, I'm Pagekit,<br class="uk-hidden-small">
+            your new favorite CMS.</h1>
+          <a class="uk-button uk-button-large" href="http://www.pagekit.com">Get started</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div id="tm-main" class="tm-main uk-block uk-block-default">
+  <div class="uk-container uk-container-center">
+    <div class="uk-grid" data-uk-grid-match="" data-uk-grid-margin="">
+      <main class="uk-width-1-1 uk-row-first">
+        <article class="uk-article uk-text-center">
+          <div class="uk-width-medium-3-4 uk-container-center">
+            <h2 class="uk-h1 uk-margin-large-bottom">Uniting fresh design and clean code<br
+              class="uk-hidden-small">to create beautiful websites.</h2>
+            <p class="uk-width-medium-4-6 uk-container-center">Donec id elit non mi porta gravida at eget
+              metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis
+              risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.
+              Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac,
+              vestibulum at eros.</p>
+            <p class="uk-margin-large"><i>For more photography check our <a href="#">Instagram</a></i></p>
+          </div>
+          <div class="uk-grid uk-grid-width-medium-1-2 uk-grid-match" data-uk-grid-margin="">
+            <div class="uk-row-first">
+              <div class="uk-panel">
+                <div class="uk-margin-large"><img src="/image/home-01.jpg"
+                                                  alt="home-01"></div>
+                <h3 class="uk-h2">About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                  dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                  quis, sem.</p>
+                <p><a href="#">Read more</a></p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-panel">
+                <div class="uk-margin-large"><img src="/image/home-02.jpg">
+                  <h3 class="uk-h2">What's New?</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget
+                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                    pretium
+                    quis, sem.</p>
+                  <p><a href="#">Read more</a></p>
+                </div>
+              </div>
+            </div>
+        </article>
+      </main>
+    </div>
+  </div>
+</div>
+<div id="tm-footer" class="tm-footer uk-block uk-block-secondary uk-contrast">
+  <div class="uk-container uk-container-center">
+    <section class="uk-grid uk-grid-match" data-uk-grid-margin="">
+      <div class="uk-width-medium-1-1 uk-row-first">
+        <div class="uk-panel   ">
+          <ul class="uk-grid uk-grid-medium uk-flex uk-flex-center">
+            <li><a href="#" class="uk-icon-hover uk-icon-small uk-icon-pinterest"></a></li>
+            <li><a href="#" class="uk-icon-hover uk-icon-small uk-icon-twitter"></a></li>
+            <li><a href="#" class="uk-icon-hover uk-icon-small uk-icon-behance "></a></li>
+          </ul>
+          <ul class="uk-subnav uk-margin uk-flex uk-flex-center">
+            <li><a href="#">Street, Country</a></li>
+            <li><a href="#">(123) 456-7899</a></li>
+            <li><a href="#">email@example.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div id="offcanvas" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <ul class="uk-nav uk-nav-offcanvas">
+      <li class=" uk-active">
+        <a href="/demo/theme-one/">Home</a>
+      </li>
+      <li class="">
+        <a href="/demo/theme-one/about">About</a>
+      </li>
+      <li class="">
+        <a href="/demo/theme-one/blog">Blog</a>
+      </li>
+      <li class="">
+        <a href="/demo/theme-one/positions">Positions</a>
+      </li>
+    </ul>
+  </div>
+</div>
 </body>
 </html>
